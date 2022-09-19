@@ -23,20 +23,14 @@ public class AcceptanceTests
     [Test]
     public void SimpleNumbers()
     {
-        Assert.AreEqual("1", k.Pattern(1));
-        Assert.AreEqual("1\n22", k.Pattern(2));
-        Assert.AreEqual("1\n22\n333\n4444\n55555", k.Pattern(5));
+        Assert.That(k.Pattern(1), Is.EqualTo("1"));
+        Assert.That(k.Pattern(2), Is.EqualTo("1\n22"));
+        Assert.That(k.Pattern(5), Is.EqualTo("1\n22\n333\n4444\n55555"));
     }
 }
 
 public class Kata
 {
     public string Pattern(int n)
-    {
-        if(n<1) return "";
-        return string.Join("\n",
-            Enumerable
-                .Range(1, n)
-                .Select(e => string.Concat(Enumerable.Repeat(e, e))));
-    }
+        => string.Join("\n", Enumerable.Repeat(new string('+', n), n));
 }
