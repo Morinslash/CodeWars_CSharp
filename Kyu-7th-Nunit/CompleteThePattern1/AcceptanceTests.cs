@@ -14,8 +14,6 @@ pattern(5):
 55555
  */
 
-using System.Text;
-
 namespace Kyu_7th_Nunit.CompleteThePattern1;
 
 public class AcceptanceTests
