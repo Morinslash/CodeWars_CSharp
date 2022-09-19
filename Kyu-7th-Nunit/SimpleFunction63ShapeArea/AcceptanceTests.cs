@@ -15,13 +15,13 @@ public class AcceptanceTests
     {
         var kata = new Kata();
 
-        Assert.AreEqual(5, kata.ShapeArea(2));
+        Assert.That(kata.ShapeArea(2), Is.EqualTo(5));
 
-        Assert.AreEqual(13, kata.ShapeArea(3));
+        Assert.That(kata.ShapeArea(3), Is.EqualTo(13));
 
-        Assert.AreEqual(1, kata.ShapeArea(1));
+        Assert.That(kata.ShapeArea(1), Is.EqualTo(1));
 
-        Assert.AreEqual(41, kata.ShapeArea(5));
+        Assert.That(kata.ShapeArea(5), Is.EqualTo(41));
     }
 }
 
