@@ -23,7 +23,5 @@ public class AcceptanceTests
 public class Kata
 {
     public static string GenerateShape(int n)
-    => n < 1 ? "" :  string.Join("\n",Enumerable
-        .Range(1, n)
-        .Select(_ => string.Concat(Enumerable.Repeat("+", n))));
+    => string.Join("\n", Enumerable.Repeat(new string('+', n), n));
 }

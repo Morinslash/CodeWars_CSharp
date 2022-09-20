@@ -32,5 +32,7 @@ public class AcceptanceTests
 public class Kata
 {
     public string Pattern(int n)
-        => string.Join("\n", Enumerable.Repeat(new string('+', n), n));
+        => n < 1 ? "" :  string.Join("\n",Enumerable
+            .Range(1, n)
+            .Select(e => string.Concat(Enumerable.Repeat(e, e))));
 }

@@ -52,9 +52,9 @@ public class RomanConvert
         var romanNumber = new StringBuilder();
         while (n > 0)
         {
-            var value = mapper.Keys.Where(x => x <= n).Max();
-            romanNumber.Append(mapper.GetValueOrDefault(value));
-            n -= value;
+            var key = mapper.Keys.Where(x => x <= n).Max();
+            romanNumber.Append(mapper.GetValueOrDefault(key));
+            n -= key;
         }
         return romanNumber.ToString();
     }
