@@ -36,9 +36,9 @@ public class AcceptanceTests
 public class Kata
 {
     public static string High(string s)
+        // => s.Split(' ').OrderByDescending(x => x.Sum(z => z - 'a' + 1)).First();
         => s.Split(' ')
-            .GroupBy(str => str.Sum(c => (Convert.ToInt32(c)) - 96))
-            .ToDictionary(g => g.Key, g => g.ToList())
-            .MaxBy(g => g.Key).Value
+            .GroupBy(str => str.Sum(c => c - 'a' + 1))
+            .MaxBy(g => g.Key)!
             .First();
 }
