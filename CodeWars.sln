@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kyu-7th-Nunit", "Kyu-7th-Nu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kyu-6th-Nunit", "Kyu-6th-Nunit\Kyu-6th-Nunit.csproj", "{67F67ED3-822B-450C-ADE2-F91D5DAC4F9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kyu-5th-Nunit", "Kyu-5th-Nunit\Kyu-5th-Nunit.csproj", "{48031348-C633-43F9-B727-D0CD2852E06A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{67F67ED3-822B-450C-ADE2-F91D5DAC4F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F67ED3-822B-450C-ADE2-F91D5DAC4F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F67ED3-822B-450C-ADE2-F91D5DAC4F9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48031348-C633-43F9-B727-D0CD2852E06A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48031348-C633-43F9-B727-D0CD2852E06A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48031348-C633-43F9-B727-D0CD2852E06A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48031348-C633-43F9-B727-D0CD2852E06A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
